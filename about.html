@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Website</title>
+    <style>
+        /* CSS - The Design */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        body { line-height: 1.6; color: #333; }
+
+        header { background: #2c3e50; color: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+
+        .hero { background: #f4f4f4; height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .btn { background: #3498db; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px; transition: 0.3s; }
+        .btn:hover { background: #2980b9; }
+
+        .section { padding: 4rem 5%; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 2rem; }
+        .card { padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+
+        footer { background: #2c3e50; color: white; text-align: center; padding: 2rem; margin-top: 2rem; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo"><h2>BrandName</h2></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact" onclick="showAlert()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Welcome to My Website</h1>
+        <p>A clean, simple, and responsive starter template.</p>
+        <a href="#services" class="btn">Get Started</a>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <h2>Our Services</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>Creating beautiful and functional websites tailored to your needs.</p>
+            </div>
+            <div class="card">
+                <h3>Development</h3>
+                <p>Building robust applications using the latest web technologies.</p>
+            </div>
+            <div class="card">
+                <h3>Marketing</h3>
+                <p>Helping you reach your audience through digital strategies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 BrandName. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript - Interactivity -->
+    <script>
+        function showAlert() {
+            alert("Thanks for clicking! This is where your contact form or info would go.");
+        }
+    </script>
+
+</body>
+</html>
